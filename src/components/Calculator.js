@@ -11,9 +11,14 @@ const Calculator = () => {
             setInputValue(inputValue+value)
         }
     }
-    
+
     const clear = ()=>{
         setInputValue('0')
+    }
+
+    const sumValue = () => {
+        let result = eval(inputValue)
+        setInputValue(result)
     }
 
   return (
@@ -24,8 +29,8 @@ const Calculator = () => {
       <div className="calculator-btn">
         <button className="operator" onClick={()=>disPlay('+')}>+</button>
         <button className="operator" onClick={()=>disPlay('-')}>–</button>
-        <button className="operator" onClick={()=>disPlay('×')}>×</button>
-        <button className="operator" onClick={()=>disPlay('÷')}>÷</button>
+        <button className="operator" onClick={()=>disPlay('*')}>×</button>
+        <button className="operator" onClick={()=>disPlay('/')}>÷</button>
         {/* Number */}
         <button onClick={()=>disPlay('7')}>7</button>
         <button onClick={()=>disPlay('8')}>8</button>
@@ -39,7 +44,7 @@ const Calculator = () => {
         <button onClick={()=>disPlay('.')}>.</button>
         <button onClick={()=>disPlay('0')}>0</button>
         <button className="clear-btn" onClick={clear}>C</button>
-        <button className="equal operator">=</button>
+        <button className="equal operator" onClick={sumValue}>=</button>
       </div>
     </div>
   );
