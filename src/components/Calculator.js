@@ -1,4 +1,5 @@
-import React from "react";
+// import React from "react";
+import './Calculator.css'
 
 const Calculator = () => {
   return (
@@ -24,7 +25,7 @@ const Calculator = () => {
         <button>.</button>
         <button>0</button>
         <button className="clear-btn">C</button>
-        <button className="equal">=</button>
+        <button className="equal operator">=</button>
       </div>
     </div>
   );
