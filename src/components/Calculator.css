@@ -67,9 +67,9 @@ button:active{
 
 
 
-@media screen and (max-width: 690px) {
+@media (max-width: 690px) {
     .calculator{
-        width: 250px;
+        width: 200px;
     }
     .calculator-display h1{
         font-size: 30px;
@@ -86,7 +86,7 @@ button:active{
         font-weight: 200;
     }
     .calculator-btn{
-        width: fit-content;
+        width: auto;
         grid-gap: 2.5px;
         padding: 2.5px;
     }

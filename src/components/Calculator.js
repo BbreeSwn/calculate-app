@@ -17,6 +17,7 @@ const Calculator = () => {
     }
 
     const sumValue = () => {
+      // eslint-disable-next-line
         let result = eval(inputValue)
         setInputValue(result)
     }
