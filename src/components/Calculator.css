@@ -68,23 +68,37 @@ button:active{
 
 
 @media (max-width: 690px) {
-    .calculator{
-        width: 200px;
+    .calculator {
+        width: 100%; /* ให้ calculator กว้างเต็มหน้าจอ */
+        max-width: 300px; /* ตั้งค่าความกว้างสูงสุด เพื่อไม่ให้ใหญ่เกินไป */
+        margin: 0 auto; /* จัดกึ่งกลางบนหน้าจอ */
     }
-    .calculator-display h1{
-        font-size: 30px;
+
+    .calculator-display h1 {
+        font-size: 24px; /* ลดขนาดฟอนต์ให้เหมาะสมกับหน้าจอมือถือ */
+        text-align: right; /* จัดข้อความให้อยู่ทางขวา */
+        padding: 10px; /* เพิ่มระยะห่างเล็กน้อย */
     }
-    body{
-        width: 200px;       
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 10px; /* เพิ่มการเว้นช่องว่างด้านข้าง */
     }
-    button{
-        min-height: 25px;
-        font-size: 18px;
-        font-weight: 200;
+
+    button {
+        min-height: 40px; /* ขยายปุ่มให้ใช้งานง่ายขึ้น */
+        font-size: 16px; /* ขนาดฟอนต์ที่พอดีกับปุ่ม */
+        font-weight: 400; /* ลดน้ำหนักฟอนต์ให้เหมาะสม */
+        border-radius: 5px; /* เพิ่มมุมโค้งเล็กน้อยเพื่อความสวยงาม */
     }
-    .calculator-btn{
-        width: 200px;
-        grid-gap: 2.5px;
-        padding: 2.5px;
+
+    .calculator-btn {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* ให้คอลัมน์แบ่งพื้นที่เท่ากัน */
+        grid-gap: 2.5px; /* เพิ่มช่องว่างระหว่างปุ่มให้มากขึ้น */
+        padding: 2.5px; /* เพิ่มระยะห่างภายในให้ใช้งานง่าย */
+        background-color: blanchedalmond;
     }
 }
