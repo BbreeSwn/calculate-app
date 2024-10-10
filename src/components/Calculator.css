@@ -75,7 +75,7 @@ button:active{
         font-size: 30px;
     }
     body{
-        width: auto;       
+        width: 200px;       
     }
     button{
         min-height: 25px;
@@ -83,7 +83,7 @@ button:active{
         font-weight: 200;
     }
     .calculator-btn{
-        width: auto;
+        width: 200px;
         grid-gap: 2.5px;
         padding: 2.5px;
     }
