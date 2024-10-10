@@ -75,10 +75,7 @@ button:active{
         font-size: 30px;
     }
     body{
-        width: auto;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;        
+        width: auto;       
     }
     button{
         min-height: 25px;
